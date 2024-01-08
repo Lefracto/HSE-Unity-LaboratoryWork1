@@ -1,23 +1,29 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Core
 {
   public class ProductionBuilding : MonoBehaviour
   {
-    [SerializeField] private GameResource _productionResource;
-    [SerializeField] private float _productionTime;
-    [SerializeField] private int _productionValue;
+    [Header("Production Settings")] [SerializeField]
+    private float _productionTime;
 
-    [SerializeField] private GameManager _manager;
+    [SerializeField] private int _productionLevel;
+    [SerializeField] private int _productionValue = 2;
+
+    [Space(15)] [SerializeField] private GameResource _productionResource;
+    [Space(5)] [SerializeField] private GameManager _manager;
     private ResourceBank _bank;
 
-    
-    
+
     private void Awake()
-      => _bank = _manager.GetResourceBank();
+    {
+      _bank = _manager.GetResourceBank();
+      CalculateProductionTime();
+    }
+
+    private void CalculateProductionTime()
+      => _productionTime -= _productionTime * _productionLevel;
 
     public void StartProduction()
       => StartCoroutine(FinishProduction());
@@ -29,9 +35,3 @@ namespace Core
     }
   }
 }
-
-/*
-  
-  Добавить к кнопке слайдер, который должен отображать прогресс выполнения корутины. Кнопка должна становиться неактивной при запуске корутины и активной при окончании.
-  
-  */
