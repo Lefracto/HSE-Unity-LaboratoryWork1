@@ -7,25 +7,23 @@ namespace Core
   {
     private const float START_PRODUCTION_TIME = 3;
 
-    [Header("Production Settings")] [SerializeField]
-    private float _productionTime = START_PRODUCTION_TIME;
-
-    [SerializeField] private int _productionLevel;
+    [Header("Production Settings")] private float _productionTime = START_PRODUCTION_TIME;
+    private int _productionLevel;
     [SerializeField] private int _productionValue;
-
-    [Space(15)] [SerializeField] private GameResource _productionResource;
-    [Space(5)] [SerializeField] private GameManager _manager;
+    [SerializeField] private GameResource _productionResource;
+    [SerializeField] private GameManager _manager;
     private ResourceBank _bank;
 
-    private void Awake()
+    private void Start()
     {
       _bank = _manager.GetResourceBank();
       CalculateProductionTime();
     }
 
     // calculate time: time = time * e^(-level/6)
+    private const float DECREASING_TIME_SPEED = 6f;
     private void CalculateProductionTime()
-      => _productionTime = START_PRODUCTION_TIME * Mathf.Exp(-_productionLevel / 6f);
+      => _productionTime = START_PRODUCTION_TIME * Mathf.Exp(-_productionLevel / DECREASING_TIME_SPEED);
 
     public void StartProduction()
       => StartCoroutine(FinishProduction());

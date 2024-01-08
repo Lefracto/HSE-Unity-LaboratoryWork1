@@ -158,10 +158,10 @@ RectTransform:
   m_Father: {fileID: 279886175}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 861.38, y: -51}
+  m_SizeDelta: {x: 310, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107995407
 MonoBehaviour:
@@ -554,10 +554,10 @@ RectTransform:
   m_Father: {fileID: 1818265976}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 172.31, y: 0}
-  m_SizeDelta: {x: 344.62, y: 520.25}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 14}
+  m_SizeDelta: {x: 1027, y: 233}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279886176
 MonoBehaviour:
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279886174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 330, y: 75.19}
+  m_CellSize: {x: 310, y: 90}
   m_Spacing: {x: 39.69, y: 29.4}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -809,11 +809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b82a4aab54a278142d667b4ad580f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionTime: 0
-  _productionLevel: 0
-  _productionValue: 0
-  _productionResource: 0
-  _manager: {fileID: 0}
+  _productionValue: 1
+  _productionResource: 1
+  _manager: {fileID: 1013598434}
 --- !u!114 &354421263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,13 +856,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099171070}
-        m_TargetAssemblyTypeName: Core.ShopController, Assembly-CSharp
-        m_MethodName: BuyLevel
-        m_Mode: 2
+      - m_Target: {fileID: 354421262}
+        m_TargetAssemblyTypeName: Core.ProductionBuilding, Assembly-CSharp
+        m_MethodName: StartProduction
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8c23fb89bb08116499012737a9891e40, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -993,13 +991,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099171070}
-        m_TargetAssemblyTypeName: Core.ShopController, Assembly-CSharp
-        m_MethodName: BuyLevel
-        m_Mode: 2
+      - m_Target: {fileID: 366746816}
+        m_TargetAssemblyTypeName: Core.ProductionBuilding, Assembly-CSharp
+        m_MethodName: StartProduction
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8c23fb89bb08116499012737a9891e40, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1055,11 +1053,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b82a4aab54a278142d667b4ad580f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionTime: 0
-  _productionLevel: 0
-  _productionValue: 0
+  _productionValue: 1
   _productionResource: 0
-  _manager: {fileID: 0}
+  _manager: {fileID: 1013598434}
 --- !u!1 &408072220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,8 +1764,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1903,8 +1899,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2000,7 +1996,7 @@ GameObject:
   - component: {fileID: 902719682}
   - component: {fileID: 902719681}
   m_Layer: 5
-  m_Name: WoodText
+  m_Name: WoodProd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2039,11 +2035,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b82a4aab54a278142d667b4ad580f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionTime: 0
-  _productionLevel: 0
-  _productionValue: 0
-  _productionResource: 0
-  _manager: {fileID: 0}
+  _productionValue: 1
+  _productionResource: 2
+  _manager: {fileID: 1013598434}
 --- !u!114 &902719682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,13 +2082,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099171070}
-        m_TargetAssemblyTypeName: Core.ShopController, Assembly-CSharp
-        m_MethodName: BuyLevel
-        m_Mode: 2
+      - m_Target: {fileID: 902719681}
+        m_TargetAssemblyTypeName: Core.ProductionBuilding, Assembly-CSharp
+        m_MethodName: StartProduction
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8c23fb89bb08116499012737a9891e40, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2217,10 +2211,10 @@ RectTransform:
   m_Father: {fileID: 279886175}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 162, y: -51}
+  m_SizeDelta: {x: 310, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017383038
 MonoBehaviour:
@@ -2389,8 +2383,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2450,7 +2444,7 @@ GameObject:
   - component: {fileID: 1099171069}
   - component: {fileID: 1099171070}
   m_Layer: 0
-  m_Name: ShopController
+  m_Name: ShopManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2483,8 +2477,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f63c37b541455eacc90f89847455a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  _productionBuildings: []
+  _manager: {fileID: 1013598434}
+  _productionBuildings:
+  - {fileID: 366746816}
+  - {fileID: 354421262}
+  - {fileID: 902719681}
+  - {fileID: 1607689886}
+  - {fileID: 1291548501}
 --- !u!1 &1161490015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,8 +2569,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2655,10 +2654,10 @@ RectTransform:
   m_Father: {fileID: 279886175}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 511.69, y: -51}
+  m_SizeDelta: {x: 310, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250336644
 MonoBehaviour:
@@ -2756,7 +2755,7 @@ GameObject:
   - component: {fileID: 1291548502}
   - component: {fileID: 1291548501}
   m_Layer: 5
-  m_Name: GoldText
+  m_Name: GoldProd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2795,11 +2794,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b82a4aab54a278142d667b4ad580f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionTime: 0
-  _productionLevel: 0
-  _productionValue: 0
-  _productionResource: 0
-  _manager: {fileID: 0}
+  _productionValue: 1
+  _productionResource: 4
+  _manager: {fileID: 1013598434}
 --- !u!114 &1291548502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2844,13 +2841,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099171070}
-        m_TargetAssemblyTypeName: Core.ShopController, Assembly-CSharp
-        m_MethodName: BuyLevel
-        m_Mode: 2
+      - m_Target: {fileID: 1291548501}
+        m_TargetAssemblyTypeName: Core.ProductionBuilding, Assembly-CSharp
+        m_MethodName: StartProduction
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8c23fb89bb08116499012737a9891e40, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3064,10 +3061,10 @@ RectTransform:
   m_Father: {fileID: 279886175}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 340.31, y: -170.4}
+  m_SizeDelta: {x: 310, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436934009
 MonoBehaviour:
@@ -3435,7 +3432,7 @@ GameObject:
   - component: {fileID: 1607689887}
   - component: {fileID: 1607689886}
   m_Layer: 5
-  m_Name: StoneText
+  m_Name: StoneProd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3474,11 +3471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b82a4aab54a278142d667b4ad580f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionTime: 0
-  _productionLevel: 0
-  _productionValue: 0
-  _productionResource: 0
-  _manager: {fileID: 0}
+  _productionValue: 1
+  _productionResource: 3
+  _manager: {fileID: 1013598434}
 --- !u!114 &1607689887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3523,13 +3518,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099171070}
-        m_TargetAssemblyTypeName: Core.ShopController, Assembly-CSharp
-        m_MethodName: BuyLevel
-        m_Mode: 2
+      - m_Target: {fileID: 1607689886}
+        m_TargetAssemblyTypeName: Core.ProductionBuilding, Assembly-CSharp
+        m_MethodName: StartProduction
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8c23fb89bb08116499012737a9891e40, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3608,10 +3603,10 @@ RectTransform:
   m_Father: {fileID: 279886175}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 690, y: -170.4}
+  m_SizeDelta: {x: 310, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700033174
 MonoBehaviour:
@@ -4194,8 +4189,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

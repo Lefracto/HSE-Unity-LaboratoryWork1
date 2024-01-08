@@ -11,7 +11,7 @@ namespace Core
     [SerializeField] private GameManager _manager;
     [SerializeField] private List<TMP_Text> _resourceTexts;
 
-    private void Awake()
+    private void Start()
     {
       ResourceBank resourceBank = _manager.GetResourceBank();
       // Get all resources from GameResource
@@ -23,6 +23,8 @@ namespace Core
         int copyI = i;
         resourceBank.GetResource(allResources[i]).OnValueChanged +=
           newValue => UpdateResourceVisual(copyI, newValue);
+
+        UpdateResourceVisual(copyI, resourceBank.GetResource(allResources[i]).Value);
       }
     }
 
