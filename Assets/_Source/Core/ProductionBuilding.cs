@@ -8,11 +8,15 @@ namespace Core
   {
     private const float START_PRODUCTION_TIME = 3;
 
-    [Header("Production Settings")] private float _productionTime = START_PRODUCTION_TIME;
+    private float _productionTime = START_PRODUCTION_TIME;
     private int _productionLevel;
+    [Header("Production Settings")] 
     [SerializeField] private int _productionValue;
     [SerializeField] private GameResource _productionResource;
-    [SerializeField] private GameManager _manager;
+
+    [Space(5)] [Header("Functional Settings")] [SerializeField]
+    private GameManager _manager;
+
     [SerializeField] private SliderAnimation _sliderAnimation;
 
     public Action<float> OnProductionLevelUp { get; set; }
