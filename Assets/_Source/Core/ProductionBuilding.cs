@@ -25,16 +25,22 @@ namespace Core
     private void CalculateProductionTime()
       => _productionTime = START_PRODUCTION_TIME * Mathf.Exp(-_productionLevel / DECREASING_TIME_SPEED);
 
+    private bool _inProduction;
     public void StartProduction()
-      => StartCoroutine(FinishProduction());
+    {
+      if (_inProduction is false)
+        StartCoroutine(FinishProduction());
+    }
 
     public void IncreaseProductionLevel()
       => ++_productionLevel;
 
     private IEnumerator FinishProduction()
     {
+      _inProduction = true;
       yield return new WaitForSeconds(_productionTime);
       _bank.ChangeResource(_productionResource, _productionValue);
+      _inProduction = false;
     }
   }
 }
