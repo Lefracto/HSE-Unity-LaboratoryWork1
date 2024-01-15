@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Core
@@ -12,20 +13,27 @@ namespace Core
     [SerializeField] private int _productionValue;
     [SerializeField] private GameResource _productionResource;
     [SerializeField] private GameManager _manager;
+    [SerializeField] private SliderAnimation _sliderAnimation;
+
+    public Action<float> OnProductionLevelUp { get; set; }
     private ResourceBank _bank;
+
 
     private void Start()
     {
+      OnProductionLevelUp += _sliderAnimation.ChangeFillDuration;
       _bank = _manager.GetResourceBank();
       CalculateProductionTime();
     }
 
     // calculate time: time = time * e^(-level/6)
     private const float DECREASING_TIME_SPEED = 6f;
+
     private void CalculateProductionTime()
       => _productionTime = START_PRODUCTION_TIME * Mathf.Exp(-_productionLevel / DECREASING_TIME_SPEED);
 
     private bool _inProduction;
+
     public void StartProduction()
     {
       if (_inProduction is false)
@@ -33,7 +41,11 @@ namespace Core
     }
 
     public void IncreaseProductionLevel()
-      => ++_productionLevel;
+    {
+      ++_productionLevel;
+      CalculateProductionTime();
+      OnProductionLevelUp.Invoke(_productionTime);
+    }
 
     private IEnumerator FinishProduction()
     {

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389dfd9b73b54d9fa9ee02e178c1496c, type: 3}
   m_Name: HumansUpgrade
   m_EditorClassIdentifier: 
-  _currencyType: 0
-  _cost: 0
+  _currencyType: 1
+  _cost: 3
   _targetProduction: 0
