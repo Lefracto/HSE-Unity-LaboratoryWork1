@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Core;
 
-namespace Core
+namespace Presentation
 {
   [Serializable]
   public class ResourceVisual : MonoBehaviour
