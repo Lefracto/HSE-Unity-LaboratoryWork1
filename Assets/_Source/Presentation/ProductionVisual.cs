@@ -17,6 +17,8 @@ namespace Presentation
         int i1 = i;
         _buildings[i].GetProductionLevel().OnValueChanged += (newValue =>
           _productionTexts[i1].text = newValue.ToString());
+
+        _buildings[i].GetProductionLevel().OnValueChanged.Invoke(_buildings[i].GetProductionLevel().Value);
       }
     }
   }

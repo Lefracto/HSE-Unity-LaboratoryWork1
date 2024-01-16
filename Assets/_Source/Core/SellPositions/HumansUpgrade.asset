@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HumansUpgrade
   m_EditorClassIdentifier: 
   _currencyType: 1
-  _cost: 3
+  _cost: 5
   _targetProduction: 0

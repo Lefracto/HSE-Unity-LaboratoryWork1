@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389dfd9b73b54d9fa9ee02e178c1496c, type: 3}
   m_Name: FoodUpgrade
   m_EditorClassIdentifier: 
-  _currencyType: 0
-  _cost: 0
-  _targetProduction: 0
+  _currencyType: 2
+  _cost: 10
+  _targetProduction: 1

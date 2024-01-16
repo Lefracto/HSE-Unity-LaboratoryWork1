@@ -9,7 +9,7 @@ namespace Core
   {
     private const float START_PRODUCTION_TIME = 3;
     private float _productionTime = START_PRODUCTION_TIME;
-    private readonly ObservableInt _productionLevel = new(1);
+    private readonly ObservableInt _productionLevel = new(0);
 
     [Header("Production Settings")] [SerializeField]
     private int _productionValue;

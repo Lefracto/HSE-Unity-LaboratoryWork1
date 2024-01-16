@@ -414,7 +414,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 107995408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099171070}
+        m_TargetAssemblyTypeName: Core.ShopManager, Assembly-CSharp
+        m_MethodName: BuyProductionLevel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c4f0f5ef76492e747a0ee0f020af6ddb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &107995408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gold
+  m_text: 10 Wood
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -912,7 +924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gold
+  m_text: 10 Gold
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4588,7 +4600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gold
+  m_text: 10 Stone
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5694,7 +5706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gold
+  m_text: 5 Food
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5855,7 +5867,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1250336645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099171070}
+        m_TargetAssemblyTypeName: Core.ShopManager, Assembly-CSharp
+        m_MethodName: BuyProductionLevel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 846652e08970e844a9e10e8379000782, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1250336645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,7 +6382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1436934010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099171070}
+        m_TargetAssemblyTypeName: Core.ShopManager, Assembly-CSharp
+        m_MethodName: BuyProductionLevel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c3034301c0583734f9f8ed02d7241fcd, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1436934010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7056,7 +7092,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gold
+  m_text: 8 Humans
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7639,7 +7675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1700033175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099171070}
+        m_TargetAssemblyTypeName: Core.ShopManager, Assembly-CSharp
+        m_MethodName: BuyProductionLevel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9aa90c625e531fe44a331abbdbfd64f0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Core.SellPosition, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1700033175
 MonoBehaviour:
   m_ObjectHideFlags: 0
